@@ -1,6 +1,6 @@
 {
-    "title": "Introduction",
-    "description": "Introduction of AsyncAPI",
+    "title": "Structure",
+    "description": "Structure of AsyncAPI Document",
     "details": {
       "intro": {
         "text": "intro.md"
