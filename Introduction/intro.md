@@ -3,6 +3,6 @@
 
 ### Welcome !
 
-In this scenario we'll learn about the structure of AsyncAPI document.
+In this scenario we'll learn about AsyncAPI.
 
 **HAVE FUN**
