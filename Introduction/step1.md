@@ -3,11 +3,8 @@
 
 This tutorial will guide you through the process of creating an AsyncAPI document, a powerful tool for defining and managing your asynchronous APIs. AsyncAPI is a specification for APIs that use asynchronous messaging, such as MQTT, AMQP, Kafka, and others. By the end of this tutorial, you should have a basic understanding of how to write an AsyncAPI document.
 
-```mermaid
-graph TD;
-    A[AsyncAPI Message] --> B[contentType]
-    style A fill:#47BCEE,stroke:#47BCEE;
-```
+![image](https://github.com/mhmohona/interactive-learning-path/assets/14244685/0fcaba35-11f0-4acd-8b8e-8791e76fbf45)
+
 
 ## Step 1 - Setting up your environment
 
