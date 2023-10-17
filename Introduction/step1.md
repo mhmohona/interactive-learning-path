@@ -3,6 +3,12 @@
 
 This tutorial will guide you through the process of creating an AsyncAPI document, a powerful tool for defining and managing your asynchronous APIs. AsyncAPI is a specification for APIs that use asynchronous messaging, such as MQTT, AMQP, Kafka, and others. By the end of this tutorial, you should have a basic understanding of how to write an AsyncAPI document.
 
+```mermaid
+graph TD;
+    A[AsyncAPI Message] --> B[contentType]
+    style A fill:#47BCEE,stroke:#47BCEE;
+```
+
 ## Step 1 - Setting up your environment
 
 Before starting, make sure you have Node.js and npm installed on your machine. If not, you can download and install them from [here](https://nodejs.org/en/download/).
