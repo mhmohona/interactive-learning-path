@@ -11,6 +11,11 @@
         }
       ]
     },
+    "assets": {
+      "host01": [
+        {"file": "chan-to-eve.yaml", "target": "/root", "chmod": "+w"}
+      ]
+    },
     "backend": {
       "imageid": "ubuntu"
     }
