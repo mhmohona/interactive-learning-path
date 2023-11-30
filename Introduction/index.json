@@ -1,22 +1,31 @@
 {
-    "title": "Introduction",
-    "description": "Introduction of AsyncAPI",
-    "details": {
+  "title": "100 Level AsyncAPI Intro",
+  "description": "Introduction of AsyncAPI - 100 Level",
+  "details": {
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "foreground": "setup_node.sh"
       },
       "steps": [
         {
+          "title": "Event-Driven Architectures",
           "text": "step1.md"
+        },
+        {
+          "title": "AsyncAPI Specification",
+          "text": "step2.md"
+        },
+        {
+          "title": "Creating and Validating AsyncAPI Code and Documents",
+          "text": "step3.md"
         }
-      ]
-    },
-    "assets": {
-      "host01": [
-        {"file": "chan-to-eve.yaml", "target": "/root", "chmod": "+w"}
-      ]
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
     },
     "backend": {
       "imageid": "ubuntu"
     }
   }
+  
