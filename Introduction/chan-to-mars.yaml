@@ -1,0 +1,16 @@
+asyncapi: 3.0.0
+info:
+  title: Message to Mars
+  version: 0.1.0
+channels:
+  marsMessage:
+    address: Mars/greetings
+    messages:
+      greetingToMars:
+        description: Communicating with Mars.
+        payload:
+          type: object
+          additionalProperties: false
+          properties:
+            fullName:
+              type: string

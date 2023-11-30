@@ -1,0 +1,19 @@
+asyncapi: 3.0.0
+info:
+  title: Chan's Message to Eve
+  version: 1.0.0
+channels:
+  spaceMessage:
+    address: Eve/letter
+    messages:
+      lettertoEarth:
+        description: Greetings From Chan
+        payload:
+          type: object
+          additionalProperties: false
+          properties:
+            fullName:
+              type: string
+            age:
+              type: integer
+              minimum: 118              
