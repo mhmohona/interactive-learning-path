@@ -1,23 +1,27 @@
 {
-    "title": "100 Level AsyncAPI Intro",
-    "description": "Introduction of AsyncAPI - 100 Level",
-    "details": {
-        "intro": {
+  "title": "100 Level AsyncAPI Intro",
+  "description": "Introduction of AsyncAPI - 100 Level",
+  "details": {
+      "intro": {
           "text": "intro.md",
           "foreground": "setup_node.sh"
-        },
-        "steps": [
-          {
-            "title": "Event-Driven Architectures",
-            "text": "step1.md"
-          }
-        ],
-        "finish": {
-          "text": "finish.md"
-        }
       },
-      "backend": {
-        "imageid": "ubuntu"
+      "steps": [
+          {
+              "title": "Event-Driven Architectures",
+              "text": "step1.md",
+              "assets": [
+                  {"file": "chan-message-errors.yml", "target": "/home/scenario/chan-message-errors.yml"},
+                  {"file": "chan-to-eve.yml", "target": "/home/scenario/chan-to-eve.yml"},
+                  {"file": "chan-to-mars.yml", "target": "/home/scenario/chan-to-mars.yml"}
+              ]
+          }
+      ],
+      "finish": {
+          "text": "finish.md"
       }
-    }
-    
+  },
+  "backend": {
+      "imageid": "ubuntu"
+  }
+}
