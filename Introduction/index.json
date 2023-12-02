@@ -10,11 +10,13 @@
           {
               "title": "Event-Driven Architectures",
               "text": "step1.md",
-              "assets": [
-                  {"file": "chan-message-errors.yml", "target": "/home/scenario/chan-message-errors.yml"},
-                  {"file": "chan-to-eve.yml", "target": "/home/scenario/chan-to-eve.yml"},
-                  {"file": "chan-to-mars.yml", "target": "/home/scenario/chan-to-mars.yml"}
+              "assets": {
+                "host01":[
+                  {"file": "chan-message-errors.yml", "target": "/root", "chmod": "+w"},
+                  {"file": "chan-to-eve.yml", "target": "/root", "chmod": "+w"},
+                  {"file": "chan-to-mars.yml", "target": "/root", "chmod": "+w"}
               ]
+            }
           }
       ],
       "finish": {
@@ -23,5 +25,8 @@
   },
   "backend": {
       "imageid": "ubuntu"
+  },
+  "interface": {
+    "layout": "ide"
   }
 }
