@@ -17,8 +17,13 @@
                   {"file": "chan-to-mars.yml", "target": "/root", "chmod": "+w"}
               ]
             }
+          },
+          {
+            "title": "AsyncAPI Specification",
+            "text": "step2.md"
           }
       ],
+      
       "finish": {
           "text": "finish.md"
       }
