@@ -1,0 +1,36 @@
+asyncapi: 3.0.0
+info:
+  title: Space Communication API
+  version: '1.0.0'
+  description: API for communication between Chan's spaceship and Capuccinova
+
+servers:
+  production:
+    host: space.mosquitto.org
+    protocol: mqtt
+    description: Production server for space communication
+
+channels:
+  roomidchat:
+    address: chat/{roomId}
+    messages:
+      chatMessage:
+        name: ChatMessage
+        payload:
+          type: object
+          properties:
+            userId:
+              type: string
+              description: The ID of the user who sent the message
+            message:
+              type: string
+              description: The chat message
+            spacename:
+              type: string
+              description: The unique spacename identifier for the message
+operations:
+  sendChatMessage:
+    action: 'send'
+    summary: Send a chat message to a specific room
+    channel:
+      $ref: '#/channels/roomidchat'
